@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROYECTO.FACTURA"
+             BackgroundImageSource="agua.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+        <Image Source="aguas.jpg" WidthRequest="10" HeightRequest="87" VerticalOptions="Fill"
+               HorizontalOptions="Fill" ></Image>
+            
+            <Label x:Name="txtfactura" Text ="FACTURA" IsVisible=" false" FontSize="Title"  HorizontalOptions="Center"/>
+
+            <Label Text="Codigo del Cliente"
+                 TextColor="White"
+                   FontSize="15"
+                Margin="10,0"
+                Padding="0"
+               x:Name="codigo"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+        <Entry x:Name="txtcodigo" Keyboard="Numeric"
+                   Margin="1,0,0,0" TextColor="White" />
+            <Picker
+                 x:Name="meses"  
+    SelectedIndexChanged="meses_SelectedIndexChanged_1"   Title=" seleccione el mes " TitleColor="White" TextColor="White">
+                <Picker.Items>
+
+
+                    <x:String>Enero</x:String>
+                    <x:String>febrero</x:String>
+                    <x:String>Marzo</x:String>
+                    <x:String>Abril</x:String>
+                    <x:String>Mayo</x:String>
+                    <x:String>Junio</x:String>
+                    <x:String>Julio</x:String>
+                    <x:String>Agosto</x:String>
+                    <x:String>Septiembre</x:String>
+                    <x:String>Octubre</x:String>
+                    <x:String>Nombiembre</x:String>
+                    <x:String>Diciembre</x:String>
+
+                </Picker.Items>
+            </Picker>
+            
+
+
+            <Button x:Name="Generar" Text="Generar Factura" Clicked="Generar_Clicked"
+            TextColor="White"
+            BorderWidth="3"
+            BorderColor="Gray"
+            Margin="60,0,60,0"
+            FontSize="18"
+            BackgroundColor="Transparent" HeightRequest="60"
+            CornerRadius="61" 
+                 />
+
+           
+            <Entry x:Name="txtnombre" Placeholder="INGRESE NOMBRE COMPLETO" Keyboard="Text" TextColor="White" IsVisible="false"/>
+            <Entry x:Name="txtpais" Placeholder="INGRESE PAIS" Keyboard="Text" IsVisible="false" TextColor="White" />
+            <Entry x:Name="txtdepartamento" Placeholder="INGRESE DEPARTAMENTO" Keyboard="Text" IsVisible="false" TextColor="White" />
+            <Entry x:Name="txtmunicipio" Placeholder="INGRESE MUNICIPIO" Keyboard="Text" IsVisible="false" TextColor="White" />
+            <Entry x:Name="txtresidencia" Placeholder="INGRESE RESIDENCIA" Keyboard="Text" IsVisible="false" TextColor="White" />
+            <Label Text="su total a pagar es de:"
+                 TextColor="White"
+               x:Name="to"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" FontSize="Title" IsVisible="false"/>
+            <Entry x:Name="txttotal" Placeholder="Total a pagar" Keyboard="Text" IsVisible="false" TextColor="White" PlaceholderColor="White" HorizontalTextAlignment="Center" FontSize="Medium" Margin="0,0,0,40" />
+          
+            
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

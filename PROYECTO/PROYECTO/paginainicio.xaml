@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROYECTO.paginainicio"
+              BackgroundImageSource="agua.jpg">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Label Text="BIENVENIDOS"
+                      TextColor="White"
+                   
+                   FontAttributes="Bold" 
+                   FontSize="28.6"   
+                   VerticalTextAlignment="Center"
+                Margin="90,60,30,0"
+                Padding="10"
+                VerticalOptions="Fill"
+                HorizontalOptions="Fill"
+                   />
+
+            <Label Text=" AGUAS DE HONDURAS"
+                      TextColor="White"
+                   
+                   FontAttributes="Bold" 
+                   FontSize="28.6"   
+                   VerticalTextAlignment="Center"
+                 Margin="40,0,0,60"
+                VerticalOptions="Fill"
+                HorizontalOptions="Fill"
+                   />
+
+
+            <Image Source="aguas.jpg" WidthRequest="15" HeightRequest="140" VerticalOptions="Fill"
+               HorizontalOptions="Fill" ></Image>
+
+            <Button x:Name="AgregarCliente" 
+                     Text="AGREGAR CLIENTE"
+            TextColor="White"
+            BorderWidth="3"
+            BorderColor="Gray" 
+            Margin="60,20,60,0"
+            FontSize="18"
+            HeightRequest="60"
+            CornerRadius="61"
+            BackgroundColor="Transparent"
+            Clicked="AgregarCliente_Clicked"
+                    
+          />
+
+            <Button x:Name="FACTURAR" 
+                     Text="FACTURAR"
+            TextColor="White"
+            BorderWidth="3"
+            BorderColor="Gray"
+            Margin="60,7,60,0"
+            FontSize="18"
+            Clicked="FACTURAR_Clicked"
+            HeightRequest="60"
+            CornerRadius="61"
+            BackgroundColor="Transparent"
+                   />
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
